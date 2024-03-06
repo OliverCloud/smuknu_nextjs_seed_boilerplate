@@ -11,12 +11,12 @@ npm install
 
 ### 2. Dernæst skal vi tilføje data til databasen.
 
-Opret en `.env` fil i roden af projektet.
+Opret en `.env` og en `local.env` fil i roden af projektet. Brug eksemplet i `misc` mappen
 
 Indsæt følgende i filen.
 
 ```bash
-MONGODB_URI=mongodb://127.0.0.1:27017/sem-galleries
+MONGODB_URI=mongodb://127.0.0.1:27017/smuknu-exam-db
 ```
 *(note: Selve mongo URI´en skulle gerne pege på din local MONGODB installation. Se eventuelt Mongo Compass)*
 
@@ -39,3 +39,5 @@ npm run dev
 ### 4. Åbn siden
 
 Åbn siden på ``http:localhost:3000`` - Eller læs i terminalen hvis det skulle være en anden port end `3000`
+
+### 5. Alt materiale finder du på https://smuknu.webmcdm.dk
