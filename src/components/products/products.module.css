@@ -1,0 +1,33 @@
+
+
+.container {
+  width: 100%;
+  background-color: var(--white-color);
+  padding: 0 1rem 1rem;
+}
+
+.products {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+.title {
+  padding: 2.5rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title > p {
+  max-width: 20rem;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 900;
+}
+.title > p > span {
+  color: var(--pink-color);
+}
+

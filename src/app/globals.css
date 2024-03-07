@@ -1,10 +1,19 @@
 :root {
 
   /* Global Variables */
-  --main-color: lightblue;
+  --white-color: #FFFFFF;
+  --light-pink-color: #F7F0F2;
+  --black-color: #000000;
+  --dark-pink-color: #EA8196;
+  --pink-color: #FA96AA;
+  --gray-transparent-color: #00000029;
+  --white-gray-color: #F3EDED;
+  --gray-color: #707070;
+  --light-gray-color: #D9D9D9;
+
 
   /* Component Specific Variables */
-  --box-color: #fff;
+  --black-transparent-color: #000000E6;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -30,11 +39,12 @@
 
 html,
 body {
-  background-color: var(--main-color);
+  background-color: var(--white-color);
+  color: var(--black-color);
 }
 
 body {
-  background-color: var(--main-color);
+  background-color: var(--white-color);
   ;
 }
 

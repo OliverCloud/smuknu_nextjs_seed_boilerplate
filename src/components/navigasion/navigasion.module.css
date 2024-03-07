@@ -1,0 +1,87 @@
+
+
+.container {  
+  position: relative;
+  height: 61px;
+}
+
+.wrapper {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 0.6rem;
+  color: var(--pink-color);
+  background-color: var(--white-color);
+
+}
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.barsBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+
+.barsMenu {
+  display: none;
+}
+.barsMenu.active {
+  position: absolute;
+  top: 61px;
+  left: 0;
+  z-index: 10;
+
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1.5rem;
+
+  padding: 1rem 0.6rem 1.6rem;
+  
+  color: var(--white-color);
+  border-radius: 0 0 0.8rem 0.8rem;
+  
+
+  background-color: var(--black-transparent-color);
+}
+
+.basketMenu {
+  display: none;
+}
+.basketMenu.active {
+  position: absolute;
+  top: 61px;
+  right: 0;
+
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  padding: 1rem 0.6rem 1.6rem;
+  
+  color: var(--black-color);
+  border-radius: 0 0 0.8rem 0.8rem;
+  
+
+  background-color: var(--white-color);
+}

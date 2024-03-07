@@ -1,0 +1,23 @@
+
+.container {
+  background-color: var(--white-color);
+}
+
+
+.title {
+  padding: 2.5rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title > p {
+  max-width: 20rem;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 900;
+}
+.title > p > span {
+  color: var(--pink-color);
+}
+
