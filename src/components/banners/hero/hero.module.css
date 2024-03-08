@@ -41,6 +41,8 @@
   background-color: var(--pink-color);
   border: none;
   border-radius: 5rem;
+  font-size: 1.1rem;
+  font-weight: 500;
   cursor: pointer;
   box-shadow: 0 0.2rem 0.3rem var(--gray-transparent-color);
   width: 100%;
@@ -65,4 +67,19 @@
   text-align: center;
   font-size: 1rem;
   font-weight: 500;
+}
+
+
+@media only screen and (min-width: 768px) {
+
+  .title {
+    font-size: 4rem;
+  }
+
+  .container {
+    padding: 1.8rem;
+  }
+  .wrapper {
+    padding: 2.8rem 2rem;
+  }
 }

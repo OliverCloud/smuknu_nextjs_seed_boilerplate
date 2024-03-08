@@ -8,8 +8,8 @@
 
 .products {
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  display: flex;
+  flex-direction: column;
   gap: 1.5rem;
   justify-items: center;
 }
@@ -31,3 +31,16 @@
   color: var(--pink-color);
 }
 
+
+@media only screen and (min-width: 768px) {
+  
+  .title > p {
+    font-size: 4rem;
+  }
+  
+  .products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}

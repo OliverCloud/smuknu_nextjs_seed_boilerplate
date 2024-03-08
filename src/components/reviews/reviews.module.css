@@ -21,3 +21,8 @@
   color: var(--pink-color);
 }
 
+@media only screen and (min-width: 768px) {
+  .title > p {
+    font-size: 4rem;
+  }
+}

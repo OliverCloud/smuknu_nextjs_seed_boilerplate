@@ -8,12 +8,14 @@
 .wrapper {
   width: 100%;
   position: fixed;
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.8rem 0.6rem;
   color: var(--pink-color);
   background-color: var(--white-color);
+  box-shadow: 0 0.1rem 10px var(--gray-transparent-color);
 
 }
 .nav {
@@ -36,6 +38,9 @@
   text-decoration: none;
   font-size: 1.7rem;
   cursor: pointer;
+}
+.barsBtn:hover {
+  color: var(--dark-pink-color);
 }
 
 .barsMenu {
@@ -61,6 +66,13 @@
   
 
   background-color: var(--black-transparent-color);
+}
+.barsMenu > a {
+  text-decoration: none;
+}
+.barsMenu > a:hover {
+  color: var(--pink-color);
+
 }
 
 .basketMenu {

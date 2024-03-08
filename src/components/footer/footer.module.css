@@ -18,3 +18,16 @@
   font-size: 2.5rem;
   color: var(--white-color);
 }
+.shome > a:hover {
+  color: var(--pink-color);
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    padding: 1.8rem 0 1.8rem;
+  }
+
+  .shome {
+    font-size: 4rem;
+  }
+}

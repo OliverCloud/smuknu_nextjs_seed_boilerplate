@@ -1,13 +1,13 @@
 
 import Image from 'next/image';
-import styles from './banner.module.css';
+import styles from './member.module.css';
 
-const Banner = (bg) => {
+const Member = () => {
     return (
         <div className={styles.container}>
             <div className={styles.wrapper}>
 
-              <p className={styles.title}>SKØNHED FOR ALLE</p>
+              <p className={styles.title}>BLIV MEDLEM</p>
               
               <div className={styles.text}>
                 <p>Alt hvad du behøver...</p>
@@ -20,4 +20,4 @@ const Banner = (bg) => {
         </div>
     )
 }
-export default Banner;
+export default Member;

@@ -1,7 +1,8 @@
-
+"use client"
 import { useEffect, useState } from 'react';
 import ReviewCard from './reviewCard/reviewCard';
 import styles from './reviews.module.css';
+
 
 const Reviews = () => {
 
@@ -21,7 +22,7 @@ const Reviews = () => {
             </div>
             <div className={styles.reviews}>
               {reviews.map(review => (
-                <ReviewCard key={review.id} review={review} />
+                <ReviewCard key={review._id} review={review} />
               ))}
             </div>
           </div>
