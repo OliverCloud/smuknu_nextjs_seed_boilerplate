@@ -10,11 +10,11 @@ const ProductCard = ({ product }) => {
     <div className={styles.container}>
       <div className={styles.wrapper}>
         <div className={styles.img}>
-        <Image src={product.image} alt={product.title} width={100} height={100} />
-        <div className={`${styles.discount} ${discount}`}>
-          <p>Spar</p>
-          <p>{product.discountInPercent}%</p>
-        </div>
+          <Image src={product.image} alt={product.title} width={100} height={100} />
+          <div className={`${styles.discount} ${discount}`}>
+            <p>Spar</p>
+            <p>{product.discountInPercent}%</p>
+          </div>
         </div>
       
         <div className={styles.text}>

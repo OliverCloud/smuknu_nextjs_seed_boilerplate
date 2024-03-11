@@ -10,11 +10,9 @@ const Member = () => {
               <p className={styles.title}>BLIV MEDLEM</p>
               
               <div className={styles.text}>
-                <p>Alt hvad du behøver...</p>
-                <p>SMUK NU</p>
+                <p>Opret dig som medlem og få flere fordele og nyheder I det øjeblik vi har dem.</p>
+                <p>Send gerne ris eller ros med når du melder dig ind, vi er altid parate til dialog.</p>
               </div>
-
-              <div className={styles.btn}>Se udvalgte produkter</div>
             </div>
             
         </div>

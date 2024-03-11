@@ -7,11 +7,11 @@
   align-items: center;
   flex-direction: column;
 
-  background-image: url(/headers/subscribers.jpg);
+  background-image: url(/headers/products.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: var(--black-color);
+  color: var(--white-color);
 }
 
 .bgimg {
@@ -32,7 +32,7 @@
   align-items: center;
   gap: 1.5rem;
 
-  background-color: var(--white-color);
+  background-color: var(--black-transparent-color);
 }
 
 .btn {
@@ -55,16 +55,15 @@
   transition: transform 0.2s ease-in-out; */
 }
 
-
 .wrapper > div {
   max-width: 20rem;
 }
+
 .title {
   text-align: center;
   font-size: 3rem;
   font-weight: 900;
   max-width: 25rem;
-  color: var(--pink-color);
 }
 
 .text > p {
@@ -73,12 +72,6 @@
   font-weight: 500;
 }
 
-.text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.5rem;
-}
 
 @media only screen and (min-width: 768px) {
 

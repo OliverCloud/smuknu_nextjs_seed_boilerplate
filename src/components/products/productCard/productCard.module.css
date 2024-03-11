@@ -12,12 +12,12 @@
   height: 100%;
   border-radius: 1rem;
   overflow: hidden;
-  background-color: var(--pink-color);
   box-shadow: 0 0.2rem 0.5rem var(--gray-transparent-color);
 }
 
 .img {
   position: relative;
+  border-bottom: 3px solid var(--pink-color);
 }
 
 .img > img {

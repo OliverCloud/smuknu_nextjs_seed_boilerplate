@@ -45,7 +45,7 @@ const Navigasion = () => {
 
         <div className={`${styles.barsMenu} ${ barsMenu ? styles.active : ''}`}>
           <Link href={'/'}>FORSIDEN</Link>
-          <Link href={'/'}>VORES PRODUKTER</Link>
+          <Link href={'/produkter'}>VORES PRODUKTER</Link>
           <Link href={'/sundhed'}>SPØRG OM SUNDHED</Link>
           <Link href={'/medlem'}>BLIV MEDLEM</Link>
         </div>

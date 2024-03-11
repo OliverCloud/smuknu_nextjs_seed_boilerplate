@@ -55,12 +55,15 @@
   transition: transform 0.2s ease-in-out; */
 }
 
+
+.wrapper > div {
+  max-width: 20rem;
+}
 .title {
   text-align: center;
   font-size: 3rem;
   font-weight: 900;
-
-  max-width: 20rem;
+  max-width: 25rem;
 }
 
 .text > p {

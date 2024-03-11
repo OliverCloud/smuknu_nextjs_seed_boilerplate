@@ -14,16 +14,20 @@ const Accordion = ({qna}) => {
 
   return (
     <div className={styles.container}>
-      <div className={`${styles.question} ${open ? styles.active : ''}`} onClick={handleClick}>
-        <div className={styles.icon}>
-          <FaQuestion />
+   
+        <div className={`${styles.question} ${open ? styles.active : ''}`} onClick={handleClick}>
+          
+          <div className={styles.icon}>
+            <FaQuestion />
+          </div>
+
+          <p className={styles.title}>{qna.question}</p>
+
+          <div className={`${styles.answer} ${open ? styles.active : ''}`}>
+            <p>{qna.answer}</p>
+          </div>
+
         </div>
-        <p className={styles.title}>{qna.question}</p>
-      </div>
-      <div className={`${styles.answer} ${open ? styles.active : ''}`}>
-        <p>{qna.answer}</p>
-      </div>
-      <div className={styles.line}></div>
     </div>
   );
 }
