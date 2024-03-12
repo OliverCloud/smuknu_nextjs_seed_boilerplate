@@ -1,5 +1,6 @@
 
 .container {
+  position: relative;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -7,14 +8,18 @@
   align-items: center;
   flex-direction: column;
 
-  background-image: url(/headers/front.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   color: var(--black-color);
 }
 
-.bgimg {
+.img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.img > img{
 
   width: 100%;
   height: 100%;
@@ -24,7 +29,13 @@
 }
 
 .wrapper {
+
+  position: absolute;
+  top: 8rem;
   width: 100%;
+}
+
+.box {
   padding: 2.8rem 1rem;
 
   display: flex;
@@ -47,6 +58,7 @@
   box-shadow: 0 0.2rem 0.3rem var(--gray-transparent-color);
   width: 100%;
   text-align: center;
+  text-decoration: none;
 }
 .btn:hover {
   background-color: var(--dark-pink-color);
@@ -70,6 +82,14 @@
   font-weight: 500;
 }
 
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 25rem;
+}
+
 
 @media only screen and (min-width: 768px) {
 
@@ -81,6 +101,7 @@
     padding: 1.8rem;
   }
   .wrapper {
-    padding: 2.8rem 2rem;
+    top: 4rem;
+    padding: 2.8rem 1.5rem;
   }
 }

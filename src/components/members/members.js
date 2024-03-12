@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import styles from './members.module.css'; 
+import Link from 'next/link';
 
 const Members = () => {
   return (
@@ -14,7 +15,7 @@ const Members = () => {
             <p>Vær med i kundeklubben for nye videoer, rabatkoder og mere!</p>
           </div>
 
-          <div className={styles.btn}>Se udvalgte produkter</div>
+          <Link className={styles.btn} href={'/medlem'}>Se udvalgte produkter</Link>
       </div>
       <div className={styles.imgs}>
           <Image src="/reviews/phoebe_larsen.jpg" alt="members" width={500} height={500} />

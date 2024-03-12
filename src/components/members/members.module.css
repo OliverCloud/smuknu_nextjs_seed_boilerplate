@@ -45,6 +45,7 @@
   box-shadow: 0 0.2rem 0.3rem var(--gray-transparent-color);
   width: 100%;
   text-align: center;
+  text-decoration: none;
 }
 .btn:hover {
   background-color: var(--dark-pink-color);

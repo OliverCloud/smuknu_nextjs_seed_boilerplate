@@ -18,7 +18,7 @@ const Reviews = () => {
         <div className={styles.container}>
           <div className={styles.wrapper}>
             <div className={styles.title}>
-              <p><span>UDVALGT</span> SKØNHED</p>
+              <p><span>SKØNHEDER</span> UDTALER</p>
             </div>
             <div className={styles.reviews}>
               {reviews.map(review => (
