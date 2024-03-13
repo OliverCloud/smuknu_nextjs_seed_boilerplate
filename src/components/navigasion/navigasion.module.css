@@ -90,6 +90,7 @@
 /* basket */
 /* basket btn */
 .basketBtn {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -103,6 +104,21 @@
 }
 .basketBtn.active {
   color: var(--pink-color);
+}
+.basketBtn > p {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.5rem;
+  color: var(--white-color);
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  transform: translateX(50%);
+  background-color: var(--pink-color);
 }
 /*basket menu*/
 .basketMenu {

@@ -3,10 +3,9 @@ import styles from './basketMenu.module.css';
 import BasketItemCard from "./basketItemCard/basketItemCard";
 import { useEffect, useState } from 'react';
 import { useBasket } from '@/context/basket';
-import { set } from 'mongoose';
 
 
-const BasketMenu = () => {
+const BasketMenu = ({close}) => {
 
   const { basket } = useBasket();
 
@@ -49,7 +48,7 @@ const BasketMenu = () => {
   return (
     <div className={styles.container}>
       {basket.length > 0 ? (
-        <div className={styles.wrapper}>
+        <div ref={close} className={styles.wrapper}>
 
           {basketItems.map((item, index) => {
 

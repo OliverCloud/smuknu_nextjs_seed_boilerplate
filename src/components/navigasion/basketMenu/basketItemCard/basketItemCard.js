@@ -14,7 +14,7 @@ const BasketItemCard = ({product}) => {
 
         <div className={styles.price}>
           <p>{product.amount}</p>
-          <p>{product.price} kr.</p>
+          <p>{product.price * product.amount} kr.</p>
         </div>
       </div>
     </div>
