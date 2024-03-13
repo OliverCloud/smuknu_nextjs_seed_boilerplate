@@ -3,13 +3,25 @@ import Link from 'next/link';
 import styles from './navigasion.module.css';
 import Image from 'next/image';
 import { FaBars, FaShoppingBasket, FaShoppingBag } from "react-icons/fa";
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import BasketMenu from './basketMenu/basketMenu';
+import { useBasket } from '@/context/basket';
 
 const Navigasion = () => {
 
   const [barsMenu, setBarsMenu] = useState(false);
   const [basketMenu, setBasketMenu] = useState(false);
+  const [basketIcon, setBasketIcon] = useState(false);
+
+  const { basket } = useBasket();
+
+  useEffect(() => {
+    if(basket.length > 0) {
+      setBasketIcon(true);
+    } else {
+      setBasketIcon(false);
+    }
+  }, [basket]); 
 
   const handleBarsMenu = () => {
     setBasketMenu(false);
@@ -29,7 +41,7 @@ const Navigasion = () => {
           </Link>
           <div className={styles.nav}>
           
-              <div className={styles.basketBtn} onClick={handleBasketMenu}>
+              <div className={`${styles.basketBtn} ${basketIcon > 0 ? styles.active : ''}`} onClick={handleBasketMenu}>
                 <FaShoppingBasket />
               </div>
     

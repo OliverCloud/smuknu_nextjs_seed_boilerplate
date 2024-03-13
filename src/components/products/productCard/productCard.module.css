@@ -1,6 +1,7 @@
 
 .container {
   width: 100%;
+  font-size: 1.2rem;
 }
 
 .wrapper {
@@ -62,9 +63,26 @@
 }
 
 .title {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .price {
   font-weight: 700;
+}
+
+.box {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  padding: 0.6rem 1rem;
+  color: var(--white-color);
+  background-color: var(--black-color);
+  border: none;
+  border-radius: 5rem;
+  font-weight: 500;
+  cursor: pointer;
 }

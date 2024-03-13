@@ -18,6 +18,9 @@
 }
 
 .price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   text-align: end;
   font-size: 1.2rem;
   font-weight: 700;

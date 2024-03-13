@@ -96,9 +96,13 @@
   text-decoration: none;
   font-size: 1.7rem;
   cursor: pointer;
+  color: var(--light-gray-color);
 }
 .basketBtn:hover {
   color: var(--dark-pink-color);
+}
+.basketBtn.active {
+  color: var(--pink-color);
 }
 /*basket menu*/
 .basketMenu {

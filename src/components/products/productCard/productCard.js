@@ -1,10 +1,12 @@
 
 import Image from 'next/image';
 import styles from './productCard.module.css';
+import { useBasket } from '@/context/basket';
 
 const ProductCard = ({ product }) => {
 
   const discount = product.discountInPercent > 0 ? styles.active : '';
+  const {basket, addToBasket} = useBasket();
 
   return (
     <div className={styles.container}>
@@ -19,7 +21,10 @@ const ProductCard = ({ product }) => {
       
         <div className={styles.text}>
           <p className={styles.title}>{product.title}</p>
-          <p className={styles.price}>{product.price} kr.</p>
+          <div className={styles.box}>
+              <p className={styles.price}>{product.price} kr.</p>
+              <button className={styles.btn} onClick={() => addToBasket(product._id)}>Læg i kurv</button>
+          </div>
         </div>
       </div>
     </div>

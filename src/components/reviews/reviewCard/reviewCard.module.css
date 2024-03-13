@@ -15,6 +15,7 @@
   overflow: hidden;
   border-radius: 5rem;
   max-width: 10rem;
+  margin: 0 0 1.5rem;
   border: 0.5rem solid var(--pink-color);
 }
 .img > img {
@@ -41,6 +42,9 @@
   background-color: var(--pink-color);
 }
 
+.byline {
+  text-align: center;
+}
 @media only screen and (min-width: 768px) {
 
   .container {
@@ -67,7 +71,6 @@
 
   .byline {
     grid-area: b;
-    text-align: center;
   
   }
   .img {
