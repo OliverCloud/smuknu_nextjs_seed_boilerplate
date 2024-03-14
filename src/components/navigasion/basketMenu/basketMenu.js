@@ -62,7 +62,7 @@ const BasketMenu = ({close}) => {
 
         </div>
       ) : (
-        <div className={styles.empty}>
+        <div ref={close} className={styles.empty}>
           <p>Din kurv er tom</p>
         </div>
       )

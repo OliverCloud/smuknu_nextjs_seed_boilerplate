@@ -55,34 +55,31 @@ export const BasketContextProvider = ({ children }) => {
     if (basket) {
       basket = JSON.parse(basket);
   
-      // Check if the product already exists in the basket
       const existingProductIndex = basket.findIndex(item => item.id === id);
   
       if (existingProductIndex !== -1) {
-        // If the product exists, update its amount
         basket[existingProductIndex].amount -= 1;
-        
-        // Check if the amount is now 0 or less and remove the item from the basket
+  
         if (basket[existingProductIndex].amount <= 0) {
           basket.splice(existingProductIndex, 1);
         }
-      } else {
-        // If the product doesn't exist, add it to the basket
-        basket.push({
-          id: id,
-          amount: amount
-        });
       }
   
-      localStorage.setItem("basket", JSON.stringify(basket));
+      // Check if basket is empty after removing the item
+      if (basket.length === 0) {
+        localStorage.removeItem("basket");
+      } else {
+        localStorage.setItem("basket", JSON.stringify(basket));
+      }
+  
       setBasket(basket);
     } else {
-      // If basket is empty, create a new basket
       basket = [{ id: id, amount: amount }];
       localStorage.setItem("basket", JSON.stringify(basket));
       setBasket(basket);
     }
-  };  
+  };
+  
 
   const emptyBasket = () => {
     localStorage.removeItem("basket");
