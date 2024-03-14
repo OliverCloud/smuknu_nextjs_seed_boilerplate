@@ -105,6 +105,9 @@
 .basketBtn.active {
   color: var(--pink-color);
 }
+.basketBtn.active:hover {
+  color: var(--dark-pink-color);
+}
 .basketBtn > p {
   position: absolute;
   top: 0;
