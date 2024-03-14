@@ -19,8 +19,8 @@ const Members = () => {
       </div>
       <div className={styles.imgs}>
           <Image src="/reviews/phoebe_larsen.jpg" alt="members" width={500} height={500} />
-          <Image src="/reviews/phoebe_larsen.jpg" alt="members" width={500} height={500} />
-          <Image src="/reviews/phoebe_larsen.jpg" alt="members" width={500} height={500} />
+          <Image src="/reviews/kathrine_udgaard.jpg" alt="members" width={500} height={500} />
+          <Image src="/reviews/kathrine_udgaard.jpg" alt="members" width={500} height={500} />
           <Image src="/reviews/phoebe_larsen.jpg" alt="members" width={500} height={500} />
         </div>
     </div>

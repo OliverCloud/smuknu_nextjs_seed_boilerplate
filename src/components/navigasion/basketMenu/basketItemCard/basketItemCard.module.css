@@ -37,3 +37,16 @@
   border-radius: 1rem;
   display: block;
 }
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btn {
+  width: 1.5rem;
+  aspect-ratio: 1/1;
+
+}
